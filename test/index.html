@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test vente privée</title>
+	<meta name="keywords" content="test venteprivee" />
+	<meta name="author" content="Gwen" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Pixel Fabric clothes icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	 <!-- Flickity gallery styles -->
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main view -->
+	<div class="view">
+		<!-- header -->
+		<header class="header cf">
+			<h1>Foires aux vins</h1>
+		</header>
+		<!-- Bottom bar with filter and cart info -->
+			<div class="bar">
+		<div class="filter">
+			<span class="filter__label">Filter: </span>
+			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+			<button class="action filter__item" data-filter=".rouges"><i class="icon icon--rouge"></i><span class="action__text">Rouge</span></button>
+			<button class="action filter__item" data-filter=".roses"><i class="icon icon--rose"></i><span class="action__text">Rosé</span></button>
+			<button class="action filter__item" data-filter=".blancs"><i class="icon icon--blanc"></i><span class="action__text">Blanc</span></button>
+			<button class="action filter__item" data-filter=".effervescents"><i class="icon icon--effervescent"></i><span class="action__text">Effervescent</span></button>	
+			<button class="action filter__item" data-filter=".prix__doux"><i class="icon icon--prix__doux"></i><span class="action__text">Prix doux</span></button>
+			<button class="action filter__item" data-filter=".decouvertes"><i class="icon icon--decouverte"></i><span class="action__text">Belles découvertes</span></button>		
+			<button class="action filter__item" data-filter=".valeurs"><i class="icon icon--valeur"></i><span class="action__text">Valeurs sures</span></button>	
+			<button class="action filter__item" data-filter=".exceptions"><i class="icon icon--exception"></i><span class="action__text">Vins d'exceptions</span></button>
+			<button class="action filter__item" data-filter=".alsaces"><i class="icon icon--alsace"></i><span class="action__text">Alsace</span></button>
+			<button class="action filter__item" data-filter=".beaujolais"><i class="icon icon--beaujolai"></i><span class="action__text">Beaujolais</span></button>
+			<button class="action filter__item" data-filter=".bordeaux"><i class="icon icon--bordeau"></i><span class="action__text">Bordeaux</span></button>
+			<button class="action filter__item" data-filter=".bourgognes"><i class="icon icon--bourgogne"></i><span class="action__text">Bourgogne</span></button>
+		</div>
+		<button class="cart">
+			<i class="cart__icon fa fa-shopping-cart"></i>
+			<span class="text-hidden">Shopping cart</span>
+			<span class="cart__count">0</span>
+		</button>
+	</div>
+	<!-- Main 
+		<!-- Grid -->
+		<section class="grid grid--loading">
+			<!-- Loader -->
+			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+			<div class="grid__sizer"></div>
+			<!-- Grid items -->
+			<div id="card-wrap">
+				<div class="grid__item">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item exceptions">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap exceptions">
+				<div class="grid__item rouges">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap valeurs">
+				<div class="grid__item rouges">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap roses valeurs">
+				<div class="grid__item prix__doux">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap blancs">
+				<div class="grid__item">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap roses">
+				<div class="grid__item">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item rouge">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item blancs">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item blancs">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item rouges">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item beaujolais">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item roses">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item bordeaux">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item blancs">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item effervescents">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item effervescents">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+			<div id="card-wrap">
+				<div class="grid__item alsaces">
+					<div class="slider">
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+						<div class="slider__item"><img src="images/001-wine.svg" alt="Dummy" /></div>
+					</div>
+					<div class="meta">
+						<h3 class="domain">domain</h3>
+						<span class="appelation">appelation</span>
+						<span class="milesime">millesime</span>
+						<span class="price_vp_bundle">price_vp_bundle</span>
+					</div>
+					<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				</div>
+			</div>
+
+		</section>
+		<!-- /grid-->
+	</div>
+	<!-- /view -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
